@@ -25,9 +25,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.itemSettings: startActivity(new Intent(this,SettingsActivity.class)); return true;
-            case R.id.itemExit: finishAndRemoveTask(); return true;
-            default: return super.onOptionsItemSelected(item);
+            case R.id.itemSettings: startActivity(new Intent(this,SettingsActivity.class));
+                return true;
+            case R.id.itemExit: finishAndRemoveTask();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
     public void clickStart(View view) {
